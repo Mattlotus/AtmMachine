@@ -1,27 +1,36 @@
+//  setting User Balance......
 let userBalance = 30000;
-//--------------scree
+
+
+// grabbing id from HTML.........
 let buttonOne = document.querySelector("#uno");
 let buttonTwo = document.querySelector("#dos");
 let buttonThree = document.querySelector("#tres");
 let buttonFour = document.querySelector("#quatro");
 let buttonFive = document.querySelector("#cinco");
 let buttonSix = document.querySelector("#seis");
-// ------------------------------------
 
+
+//  lets grab more id with query........
 let optionOne = document.querySelector("#choiceUno");
 let optionTwo = document.querySelector("#choiceDos");
 let optionThree = document.querySelector("#choiceTres");
 let optionFour = document.querySelector("#choiceQuatro");
 let optionFive= document.querySelector("#choiceCinco");
 let optionSix = document.querySelector("#choiceSeis");
-// -----------------------------{screen-setting}
+
+
+// screen time , grabbing class with query..........
 let miniscreen = document.querySelector(".displayScreen");
+
+//  answer screen Div with some class..........
 let answerscreen = document.createElement("div");
 answerscreen.setAttribute("class", "nput");
 
 let useraccount;
 let accountBalance;
 
+// Entering pin and getting options.......
 const beginProcess = () => {
   startDisplay();
   displayMainMenu();
@@ -38,7 +47,7 @@ const startDisplay = () => {
   }
 };
 const displayMainMenu = () => {
-  optionOne.innerHTML = "Check BAL";
+  optionOne.innerHTML = "Check Balance";
   optionTwo.innerHTML = "Transfer";
   optionThree.innerHTML = "Withdrawl";
   optionFour.innerHTML = "Deposit";
@@ -46,14 +55,18 @@ const displayMainMenu = () => {
   optionSix.innerHTML = "Cancel";
 };
 
+//  switching screens after inputing option.............
 const selectionAnswer = (text) => {
   answerscreen.innerHTML = text;
   miniscreen.replaceWith(answerscreen);
 };
+
+// lets see how much bread you got playboy!!!..........
 const check_balance = () => {
   selectionAnswer(`Current Balance: ${userBalance}  USD`);
 };
 
+// put money in a safe place..........
 const deposit = () => {
 
   let cash = prompt(" Enter Amount you would like to deposit.");
@@ -62,6 +75,8 @@ const deposit = () => {
     `Current Balance: ${parseInt(userBalance) + parseInt(cash)} USD`
   );
 };
+
+//  withdraw function....aka retail therapy........
 const withdraw = () => {
 
   let cash = prompt(" Enter Amount you would like to withdraw.");
@@ -71,19 +86,4 @@ const withdraw = () => {
 };
 
 
-
-// const enter = () => {
-//   let body = document.querySelector('body')
-
-//   // create a div
-//   let firstDiv = document.createElement('div')
-//   firstDiv.setAttribute("class", "hu")
-//   firstDiv.innerHTML = "HU"
-//   // create a div inside the existing div
-//   let secondDiv = document.createElement('div')
-//   secondDiv.setAttribute("class", "doug")
-//   secondDiv.innerHTML = "DOUG"
-//   firstDiv.append(secondDiv)
-
-//   body.append(firstDiv)
-// }
+//  probably missing something..come back later........
