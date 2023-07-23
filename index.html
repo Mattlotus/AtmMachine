@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="atmContainer">
+            <div class="screen">
+              <div class="title">CHASE ATM
+                <img src="https://www.chase.com/etc/designs/chase-ux/favicon.ico" alt="" class="chase">
+              </div>
+              <div class="displayContainer">
+                <div class="btnLeft">
+                  <div class="btn" id="uno" onclick="check_balance()">Balance</div>
+                  <div class="btn" id="dos" onclick="withdraw()">withdraw</div>
+                  <div class="btn" id="tres" onclick="">settings</div>
+                </div>
+                <div class="displayScreen">
+                  <div class="hiddenScrn">
+                    <div class="slotOne" id="choiceUno"></div>
+                    <div class="slotTwo" id="choiceDos"></div>
+                  </div>
+                  <div class="hiddenScrn">
+                    <div class="slotOne" id="choiceTres"></div>
+                    <div class="slotTwo" id="choiceQuatro"></div>
+                  </div>
+                  <div class="hiddenScrn">
+                    <div class="slotOne" id="choiceCinco"></div>
+                    <div class="slotTwo" id="choiceSeis"></div>
+                  </div>
+                </div>
+        
+                <div class="btnRight">
+                  <div class="btn" id="quatro" onclick="">transfer</div>
+                  <div class="btn" id="cinco" onclick="deposit()">Deposit</div>
+                  <div class="btn" id="seis" onclick="">cancel</div>
+                </div>
+              </div>
+              <div class="cardInsert">
+        
+                <div class="cardNsurt" onclick="beginProcess()">Insert Card</div>
+              </div>
+              <!-- -----keypad -->
+              <div class="keypad">
+                <div class="row">
+                  <div class="key">1</div>
+                  <div class="key">2</div>
+                  <div class="key">3</div>
+                  <div class="key">Cancel</div>
+                </div>
+                <div class="row">
+                  <div class="key">4</div>
+                  <div class="key">5</div>
+                  <div class="key">6</div>
+                  <div class="key">Clear</div>
+                </div>
+                <div class="row">
+                  <div class="key">7</div>
+                  <div class="key">8</div>
+                  <div class="key">9</div>
+                  <div class="key" onclick="enter()">Enter</div>
+                </div>
+                <div class="row">
+                  <div class="key">.</div>
+                  <div class="key">0</div>
+                  <div class="key">,</div>
+                  <div class="key"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
