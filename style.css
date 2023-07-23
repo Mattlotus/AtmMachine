@@ -5,6 +5,7 @@ html {
   
   body {
     background-color: gray;
+    background-image:url('https://s.marketwatch.com/public/resources/images/MW-HU798_joker__ZG_20191106172312.jpg');
     display: flex;
     justify-content: center;
   }
