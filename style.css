@@ -71,7 +71,7 @@ html {
   
   .displayScreen {
     width: 70%;
-    background-color: black;
+    background-color: rgb(20, 42, 74);
   }
   
   .cardInsert {
@@ -180,22 +180,6 @@ html {
     text-align: center;
   }
   
-  .fed {
-    width: 70%
-  }
-  
-  .hu {
-    border: solid green;
-    padding: 1em;
-    height: 90px;
-    width: 90px;
-  }
-  
-  .doug {
-    border: solid red;
-    height: 90px;
-    width: 90px;
-  }
-  #a1{
+  #choiceTres , #choiceQuatro{
     color: white;
   }
